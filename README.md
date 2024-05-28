@@ -29,6 +29,14 @@ Here is a simple example to get you started:
 ```typescript
 import { Terraform } from 'terraform-tool';
 
+const config = 'terraform configuration folder name' 
+
+/*  terraform/main.tf
+I have a terraform folder inside my project root directory and inside it main.tf file resides
+You need to pass only the folder name or path only not the file name. 
+As my file path is 'terraform/main.tf', I only pass 'terraform' in Terraform() function below
+*/
+
 const tf = new Terraform('terraform');
 
 tf.init()
@@ -37,6 +45,7 @@ tf.init()
   .then(() => tf.apply())
   .then(output => console.log('Apply:', output))
   .catch(error => console.error('Error:', error));
+// Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
 tf.destroy();
 
