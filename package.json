@@ -1,0 +1,33 @@
+{
+    "name": "terraform-tool",
+    "version": "1.0.0",
+    "description": "NPM package to provision cloud infrastructure as code (IaC) using terraform",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "test": "npm run build && node dist/test.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/muhammad-usman-108/terraform-tool.git"
+    },
+    "keywords": [
+        "terraform",
+        "terraform-tool",
+        "terraform-aws",
+        "terraform-azure",
+        "terraform-google",
+        "terraform-cloud",
+        "infrastructure-as-code"
+    ],
+    "author": "muhammad-usman-108",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/muhammad-usman-108/terraform-tool/issues"
+    },
+    "homepage": "https://github.com/muhammad-usman-108/terraform-tool#readme",
+    "devDependencies": {
+        "@types/node": "^20.12.12",
+        "typescript": "^5.4.5"
+    }
+}

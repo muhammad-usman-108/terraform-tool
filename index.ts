@@ -1,11 +1,13 @@
-const { exec } = require('child_process');
+import { exec } from 'child_process';
 
 class Terraform {
-  constructor(directory) {
+  directory: string;
+
+  constructor(directory: string) {
     this.directory = directory;
   }
 
-  run(command) {
+  run(command: string): Promise<string> {
     return new Promise((resolve, reject) => {
       exec(`terraform ${command}`, { cwd: this.directory }, (error, stdout, stderr) => {
         if (error) {
@@ -18,23 +20,23 @@ class Terraform {
     });
   }
 
-  init() {
+  init(): Promise<string> {
     return this.run('init');
   }
 
-  apply(autoApprove = true) {
+  apply(autoApprove: boolean = true): Promise<string> {
     const flag = autoApprove ? '-auto-approve' : '';
     return this.run(`apply ${flag}`);
   }
 
-  plan() {
+  plan(): Promise<string> {
     return this.run('plan');
   }
 
-  destroy(autoApprove = true) {
+  destroy(autoApprove: boolean = true): Promise<string> {
     const flag = autoApprove ? '-auto-approve' : '';
     return this.run(`destroy ${flag}`);
   }
 }
 
-module.exports = Terraform;
+export default Terraform;
