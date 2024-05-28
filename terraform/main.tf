@@ -1,7 +1,7 @@
 provider "aws" {
-    region = "eu-central-1"       // your AWS region
-    access_key = "XXXXXXXXXXXX"   // your access key of AWS
-    secret_key = "XXXXXXXXXXXX"   // your secret key of AWS
+    region = "eu-central-1"   // your AWS region
+    access_key = "XXXXXXXXXXXXXXXXX"
+    secret_key = "XXXXXXXXXXXXXXXXX"
 }
 
 resource "aws_db_instance" "myRDS" {
