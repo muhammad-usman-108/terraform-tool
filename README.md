@@ -99,6 +99,10 @@ This package uses a `tsconfig.json` file for TypeScript configuration. Here is a
 
 - [Muhammad Usman](https://github.com/muhammad-usman-108)
 
+## Support
+
+<p><a href="https://buymeacoffee.com/engrmuhammk"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="engrmuhammk" /></a></p><br><br> 
+
 ## LICENSE
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/muhammad-usman-108/terraform-tool/blob/main/LICENSE) file for details.

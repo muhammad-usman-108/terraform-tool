@@ -1,6 +1,6 @@
 {
     "name": "terraform-tool",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "NPM package to provision cloud infrastructure as code (IaC) using terraform",
     "main": "dist/index.js",
     "scripts": {
